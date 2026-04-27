@@ -1,0 +1,7 @@
+clientes = []
+if len (clientes) > 0:
+    print ("--- Clientes Cadastrados ---")
+    for cliente in clientes:
+        print (f" {cliente}")
+else:
+    print ("Cliente não encontrado...")
