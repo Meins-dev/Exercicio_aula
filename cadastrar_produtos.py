@@ -1,4 +1,5 @@
-produtos=[] #lista principal
+#Cadastro de Produtos
+lista_produto=[] #lista principal
 loop_cadastro = True #Fluxo do código. Garante a repetição do cadastro
 while loop_cadastro == True:
     informacoes=[] #sublista dos produtos. Forma de separar cada produto com seu respectivo preço e código
@@ -6,11 +7,11 @@ while loop_cadastro == True:
     informacoes.append(produto_nome)
     produto_preco=float(input("Digite o preço:\n"))
     informacoes.append(produto_preco)
-    produto_cod=int(input("Digite o código:\n"))
+    produto_cod = str(input("Digite o código:\n"))
     informacoes.append(produto_cod)
-    produtos.append(informacoes)
+    lista_produto.append(informacoes)
+    print(lista_produto)
     print("Produto cadastrado com sucesso")
-    print(produtos)
     while True:
         loop = int(input("Deseja cadastrar outro?\n1 - Sim\n2 - Não \n")) #Escolha de repetição
         if loop == 1:
