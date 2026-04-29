@@ -29,4 +29,17 @@ while True:
 
 	elif opcao=="3":
 		busca=input("Digite o nome do funcionário: ")
-		encontrado=False
+
+		if busca in funcionario:
+			x = funcionario.index (busca)
+			print("Nome: ", funcionario [x])
+			print("Cargo: ",cargos [x])
+			print("Idade: ", idades[x])
+
+		else:
+			print("Funcionário não encontrado.")
+	elif opcao== "0":
+		print ("Voltando para o Menu...")
+		break
+	else:
+		print ("Opção Inválida!")
