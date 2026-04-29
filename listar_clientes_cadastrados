@@ -4,4 +4,4 @@ if len (clientes) > 0:
     for cliente in clientes:
         print (f" {cliente}")
 else:
-    print ("Cliente não encontrado...")
+    print ("Não há resgistro de clientes...")
