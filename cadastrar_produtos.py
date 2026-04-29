@@ -10,7 +10,6 @@ while loop_cadastro == True:
     produto_cod = str(input("Digite o código:\n"))
     informacoes.append(produto_cod)
     lista_produto.append(informacoes)
-    print(lista_produto)
     print("Produto cadastrado com sucesso")
     while True:
         loop = int(input("Deseja cadastrar outro?\n1 - Sim\n2 - Não \n")) #Escolha de repetição
