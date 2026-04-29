@@ -1,18 +1,21 @@
-clientes = []
+clientes = []  #para o código rodar
 
-nome = input("Digite seu nome: ")
-email = input("Digite seu email: ")
-senha = input("Digite sua Senha: ")
-confirmar_senha = input("Confirme sua senha: ")
+while True:
+    print("====Cadastro Dos Clientes====")
+    nome = input("Digite seu nome: ")
+    email = input("Digite seu email: ")
+    telefone = input("Digite seu telefone: ")
+    cpf = input("Digite seu CPF: ")
 
+    cliente = [nome, email, telefone, cpf]
 
+    clientes.append(cliente)
 
-if confirmar_senha == senha:
-    print("CLIENTE CADASTRADO COM SUCESSO!!!!")
+    print("Cliente cadstrado com sucesso !!!")
 
-    clientes = [nome, email, senha]
-    clientes.append(clientes)
+    continuar_cadastro = input("Deseja cadastrar outro cliente ? (sim/não): ").lower()
 
-else:
-    print("SENHA DIFERENTE")
-    
+    if continuar_cadastro == "sim":
+        pass 
+    else:
+        break
