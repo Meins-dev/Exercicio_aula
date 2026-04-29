@@ -1,56 +1,102 @@
 print('''
     +------------MENU------------+
-    |1-Clientes                  |
-    |  -Cadastrar clientes    |
-    |  -Excluir clientes      |
-    |2-Funcionarios              |
-    |  -Cadastrar funcionarios|
-    |  -Excluir funcionarios  |
-    |3-Produtos                  |
-    |  -Cadastrar produtos    |
-    |  -Lista de produtos     |
-    |  -Excluir produtos      |
-    |4-Pedidos                   | 
-    |  -Finalizar pedidos     |
-    |5-Sair                      |
+    |1-Clientes                  |     
+    |2-Funcionarios              | 
+    |3-Produtos                  |     
+    |4-Pedidos                   |   
+    |5-Entregas                  | 
+    |0-Sair                      |
     +----------------------------+
 ''')
 
-'''
-    +----------CLIENTES----------+
-    |  1-Cadastrar clientes      |
-    |  2-Excluir clientes        |
-    +----------------------------+
+while True:
 
-    +--------FUNCIONARIOS--------+
-    |  1-Cadastrar funcionarios  |
-    |  2-Excluir funcionarios    |
-    +----------------------------+
+    menuPrincipal = int(input("Selecione uma opção baseado no número do menu: "))
 
-    +----------CLIENTES----------+
-    |  1-Cadastrar clientes      |
-    |  2-Excluir clientes        |
-    +----------------------------+
-'''
+    if menuPrincipal == 1: #Menu dos clientes
+        print('''
+            +----------CLIENTES----------+
+            |  1-Cadastrar clientes      |
+            |  2-Atualizar clientes      |
+            |  3-Excluir clientes        |
+            |  0-Sair                    |
+            +----------------------------+
+        ''')
 
-escolhaMenu = int(input("Selecione uma opção baseado no número do menu: "))
+        menuClientes = int(input("Selecione uma opção baseado no número do menu dos clientes: "))
 
-while escolhaMenu != 4:
-    if escolhaMenu == 1: #Visualizar os clientes
-        print("\n-----CLIENTES-----\n")
+        while True:
+            if menuClientes == 1: #Cadastrar clientes
+                print("Estou cadastrando os clientes.")
 
-        escolhaMenu = int(input("Para ir para outra seção selecione uma opção baseado no número do menu: "))
-    elif escolhaMenu == 2: #Visualizar os funcionários
-        print("\n-----FUNCIONARIOS-----\n")
+                menuClientes = int(input("Selecione uma opção baseado no número do menu: "))
+            elif menuClientes == 2: #Atualizar clientes
+                print("Estou atualizando os clientes.")
 
-        escolhaMenu = int(input("Para ir para outra seção selecione uma opção baseado no número do menu: "))
-    elif escolhaMenu == 3: #Visualizar os produtos
-        print("\n-----PRODUTOS-----\n")
+                menuClientes = int(input("Selecione uma opção baseado no número do menu: "))
+            elif menuClientes == 3: #Excluir clientes
+                print("Estou excluindo os clientes.")
 
-        escolhaMenu = int(input("Para ir para outra seção selecione uma opção baseado no número do menu: "))
-    elif escolhaMenu == 5: #Sair do sistema
-        print("\n-----SAIR DO SISTEMA-----\n")
+                menuClientes = int(input("Selecione uma opção baseado no número do menu: "))
+            elif menuClientes == 0: #Sair do Menu
+                break
+            else:
+                print("[ERROR!] Algo deu errado! Reinicie o sistema e tente novamente")
+    elif menuPrincipal == 2: #Menu dos funcionários
+        print('''
+            +--------FUNCIONÁRIOS--------+
+            |  1-Cadastrar funcionarios  |
+            |  2-Excluir funcionarios    |
+            |  0-Sair                    |
+            +----------------------------+
+        ''')
 
-        escolhaMenu = int(input("Para ir para outra seção selecione uma opção baseado no número do menu: "))
+        menuFuncionarios = int(input("Selecione uma opção baseado no número do menu dos funcionários: "))
+
+        while True:
+            if menuClientes == 1: #Cadastrar clientes
+                print("Estou cadastrando os clientes.")
+
+                menuClientes = int(input("Selecione uma opção baseado no número do menu: "))
+            elif menuClientes == 2: #Atualizar clientes
+                print("Estou atualizando os clientes.")
+
+                menuClientes = int(input("Selecione uma opção baseado no número do menu: "))
+            elif menuClientes == 3: #Excluir clientes
+                print("Estou excluindo os clientes.")
+
+                menuClientes = int(input("Selecione uma opção baseado no número do menu: "))
+            elif menuClientes == 0: #Sair do Menu
+                break
+            else:
+                print("[ERROR!] Algo deu errado! Reinicie o sistema e tente novamente")
+
+    elif menuPrincipal == 3: #Menu dos produtos
+
+        print('''
+            +----------PRODUTOS----------+
+            |  1-Cadastrar produtos      |
+            |  2-Listar produtos         |
+            |  3-Excluir produtos        |
+            |  4-Finalizar produtos      |
+            |  0-Sair                    |
+            +----------------------------+
+        ''')
+
+    elif menuPrincipal == 4: #Menu dos pedidos
+
+        print('''
+            +-----------PEDIDOS----------+
+            |  1-Finalizar pedidos       |
+            |  2-Listar produtos         |
+            |  3-Excluir produtos        |
+            |  0-Sair                    |
+            +----------------------------+
+        ''')
+    elif menuPrincipal == 5: #Menu das entregas
+
+        print("+----------ENTREGAS----------+")
+    elif menuPrincipal == 0:
+        break
     else:
-        print("Algo deu errado! Reinicie o sistema e tente novamente")
+        print("[ERROR!] Algo deu errado! Reinicie o sistema e tente novamente")
