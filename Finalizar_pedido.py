@@ -34,6 +34,7 @@ while opcao<=4:
          sn=int(input("Digite sua senha: "))
          if sn==senha:
            print('Pagamento Concluído')
+           break
          else:
             print('Senha Icorreta')
        else:
@@ -60,6 +61,7 @@ while opcao<=4:
          sn=int(input("Digite sua senha: "))
          if sn==senha:
            print('Pagamento Concluído')
+           break
          else:
             print('Senha Icorreta')
         else:
@@ -86,6 +88,7 @@ while opcao<=4:
          sn=int(input("Digite sua senha: "))
          if sn==senha:
            print('Pagamento Concluído')
+           break
          else:
             print('Senha Icorreta')
         else:
