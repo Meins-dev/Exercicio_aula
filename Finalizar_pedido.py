@@ -17,9 +17,7 @@ while opcao<=4:
  opcao=int(input("Digite a opção desejada: "))
  if opcao > 4:
             print("Opção inválida.")
-            continue
  if opcao == 1:
-  
     print("Pagamento no crédito selecionado.")
     print(f"O valor final do produto é: R${vlrproduto:.2f}")
     print(produtos[0],'- R$',vlrunit1)
@@ -91,4 +89,3 @@ while opcao<=4:
  if opcao==4:
     print("Saindo do programa. Obrigado por comprar conosco!")
     break
- 
