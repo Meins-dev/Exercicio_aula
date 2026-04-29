@@ -1,5 +1,7 @@
 escolha = 1
 funcionarios = []
+idades = []
+cargos = []
 senhas = []
 
 while escolha != 0:
@@ -11,6 +13,8 @@ while escolha != 0:
         if excluir in funcionarios:
             x = funcionarios.index (excluir)
             funcionarios.pop (x)
+            idades.pop (x)
+            cargos.pop (x)
             senhas.pop (x)
             print ("\nCliente Excluido!\n")
         else:
