@@ -1,20 +1,37 @@
 print('''
     +------------MENU------------+
     |1-Clientes                  |
-    |  1.1-Cadastrar clientes    |
-    |  1.2-Excluir clientes      |
+    |  -Cadastrar clientes    |
+    |  -Excluir clientes      |
     |2-Funcionarios              |
-    |  2.1-Cadastrar funcionarios|
-    |  2.2-Excluir funcionarios  |
+    |  -Cadastrar funcionarios|
+    |  -Excluir funcionarios  |
     |3-Produtos                  |
-    |  3.1-Cadastrar produtos    |
-    |  3.2-Lista de produtos     |
-    |  3.3-Excluir produtos      |
+    |  -Cadastrar produtos    |
+    |  -Lista de produtos     |
+    |  -Excluir produtos      |
     |4-Pedidos                   | 
-    |  4.1-Finalizar pedidos     |
+    |  -Finalizar pedidos     |
     |5-Sair                      |
     +----------------------------+
 ''')
+
+'''
+    +----------CLIENTES----------+
+    |  1-Cadastrar clientes      |
+    |  2-Excluir clientes        |
+    +----------------------------+
+
+    +--------FUNCIONARIOS--------+
+    |  1-Cadastrar funcionarios  |
+    |  2-Excluir funcionarios    |
+    +----------------------------+
+
+    +----------CLIENTES----------+
+    |  1-Cadastrar clientes      |
+    |  2-Excluir clientes        |
+    +----------------------------+
+'''
 
 escolhaMenu = int(input("Selecione uma opção baseado no número do menu: "))
 
