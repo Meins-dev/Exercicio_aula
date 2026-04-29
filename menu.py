@@ -1,5 +1,3 @@
-
-
 while True:
     print('''
     +-------MENU PRINCIPAL-------+
@@ -31,17 +29,17 @@ while True:
                 print("\n+--------------+\n")
                 print("Estou cadastrando os clientes.")
 
-                menuClientes = int(input("Selecione uma opção baseado no número do menu: "))
+                menuClientes = int(input("Selecione uma opção baseado no número do menu dos clientes: "))
             elif menuClientes == 2: #Atualizar clientes
                 print("\n+--------------+\n")
                 print("Estou atualizando os clientes.")
 
-                menuClientes = int(input("Selecione uma opção baseado no número do menu: "))
+                menuClientes = int(input("Selecione uma opção baseado no número do menu dos clientes: "))
             elif menuClientes == 3: #Excluir clientes
                 print("\n+--------------+\n")
                 print("Estou excluindo os clientes.")
 
-                menuClientes = int(input("Selecione uma opção baseado no número do menu: "))
+                menuClientes = int(input("Selecione uma opção baseado no número do menu dos clientes: "))
             elif menuClientes == 0: #Sair do Menu
                 break
             else:
@@ -91,12 +89,12 @@ while True:
         while True:
             if menuProdutos == 1: #Cadastrar produtos
                 print("\n+--------------+\n")
-                print("Estou cadastrando os funcionários.")
+                print("Estou cadastrando os produtos.")
 
                 menuProdutos = int(input("Selecione uma opção baseado no número do menu dos produtos: "))
             elif menuProdutos == 2: #Listar produtos
                 print("\n+--------------+\n")
-                print("Estou excluindo os funcionários.")
+                print("Estou listando os produtos.")
 
  
                 menuProdutos = int(input("Selecione uma opção baseado no número do menu dos produtos: "))
@@ -131,18 +129,18 @@ while True:
         while True:
             if menuPedidos == 1: #Cadastrar pedidos
                 print("\n+--------------+\n")
-                print("Estou cadastrando os funcionários.")
+                print("Estou finalizando os pedidos.")
 
                 menuPedidos = int(input("Selecione uma opção baseado no número do menu dos pedidos: "))
             elif menuPedidos == 2: #Listar pedidos
                 print("\n+--------------+\n")
-                print("Estou excluindo os funcionários.")
+                print("Estou listando os pedidos.")
 
  
                 menuPedidos = int(input("Selecione uma opção baseado no número do menu dos pedidos: "))
             elif menuPedidos == 3: #Excluir pedidos
                 print("\n+--------------+\n")
-                print("Estou excluindo os produtos")
+                print("Estou excluindo os pedidos")
 
                 menuPedidos = int(input("Selecione uma opção baseado no número do menu dos pedidos: "))
             elif menuPedidos == 0: #Sair do menu
@@ -151,7 +149,23 @@ while True:
                 print("[ERROR!] Algo deu errado! Reinicie o sistema e tente novamente")
     elif menuPrincipal == 5: #Menu das entregas
 
-        print("+----------ENTREGAS----------+")
+        print('''
+        +-----------ENTREGAS---------+
+        |  1-Cadastrar entregas      |
+        +----------------------------+
+        ''')
+
+        menuEntregas = int(input("Selecione uma opção baseado no número do menu das entregas: "))
+
+        while True:
+            if menuEntregas == 1: #Cadastrar endereços
+                print("\n+--------------+\n")
+                print("Estou cadastrando as entregas.")
+
+                menuEntregas = int(input("Selecione uma opção baseado no número do menu das entregas: "))
+                break
+            else:
+                print("[ERROR!] Algo deu errado! Reinicie o sistema e tente novamente")
     elif menuPrincipal == 0:
         break
     else:
