@@ -8,6 +8,7 @@ vlrproduto=vlrunit1+vlrunit2+vlrunit3+vlrunit4+vlrunit5 #Soma dos valores unitá
 opcao=0 #Opção de Forma de Pagamento ou de Sair
 op1=1 #Opção de Concluir Pagamento
 op2=2 #Opção de Cancelar Pagamento
+senha=1234 #Senha para concluir o pagamento
 while opcao<=4: 
  print("Escolha a forma de pagamento:")
  print("1 - Crédito")
@@ -28,11 +29,14 @@ while opcao<=4:
     vlrpago=float(input('R$'))
     op=int(input('1-Concluir\n2-Cancelar\n '))
     if op==op1:
-        if vlrpago==vlrproduto:
+       if vlrpago==vlrproduto:
          print('Valor R$',vlrpago)
-         print('Pagamento concluído com sucesso!')
-         break
-        else:
+         sn=int(input("Digite sua senha: "))
+         if sn==senha:
+           print('Pagamento Concluído')
+         else:
+            print('Senha Icorreta')
+       else:
          print('Valor pago insuficiente. Pagamento não concluído.')
     if op==op2:
         print('Pagamento Cancelado')
@@ -53,8 +57,11 @@ while opcao<=4:
     if op==op1:
         if vlrpago==vlrproduto:
          print('Valor R$',vlrpago)
-         print('Pagamento concluído com sucesso!')
-         break
+         sn=int(input("Digite sua senha: "))
+         if sn==senha:
+           print('Pagamento Concluído')
+         else:
+            print('Senha Icorreta')
         else:
          print('Valor pago insuficiente. Pagamento não concluído.')
     if op==op2:
@@ -76,8 +83,11 @@ while opcao<=4:
     if op==op1:
         if vlrpago==vlrproduto:
          print('Valor R$',vlrpago)
-         print('Pagamento concluído com sucesso!')
-         break
+         sn=int(input("Digite sua senha: "))
+         if sn==senha:
+           print('Pagamento Concluído')
+         else:
+            print('Senha Icorreta')
         else:
          print('Valor pago insuficiente. Pagamento não concluído.')
     if op==op2:
