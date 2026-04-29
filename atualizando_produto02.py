@@ -25,7 +25,7 @@ if atualizar_produto == True:
         print("2- Preço")
         print("1- Código")
 
-        opcao = input("O que deseja atualizar?")
+        opcao = input("O que deseja atualizar? (Se não tiver nada digite 0 para sair!)")
 
         if opcao == "1":
             novo_nome = input("Novo Nome:")
@@ -36,7 +36,9 @@ if atualizar_produto == True:
         elif opcao == "3":
             novo_codigo = input("Novo Código:")
             lista_produto[indice][2] = novo_codigo
-
+        elif opcao == "0":
+            print("Retornando ao menu!")
+            break
         else:
             print("Opção inválida")
         print("Produto Atualizado!")
