@@ -22,3 +22,5 @@ while escolha != 0:
     elif escolha == "0":
         print ("\nRetornando ao Menu...\n")
         break
+    else:
+        print ("\nOpção Inválida\n")
