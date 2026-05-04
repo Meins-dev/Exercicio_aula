@@ -18,4 +18,4 @@ while True:
     if continuar_cadastro == "sim":
         pass 
     else:
-        break  
+        break
