@@ -146,7 +146,7 @@ while True:
             elif menuPedidos == 3: #Excluir pedidos
                 
                 print("\n+--------------+\n")
-                print("Estou excluindo os pedidos")
+                print("Estou excluindo os pedidos:",excluir)
 
                 menuPedidos = int(input("Selecione uma opção baseado no número do menu dos pedidos: "))
             elif menuPedidos == 0: #Sair do menu
