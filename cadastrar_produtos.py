@@ -21,24 +21,28 @@ while True:
         while loop_cadastro == True:
             produto_nome=str(input("Digite o nome do produto:\n"))
             produto_preco=float(input("Digite o preço:\n"))
-            produto_cod = str(input("Digite o código:\n"))
-            for i in range(len(lista_produto)):
-                if i == produto_cod:
+            while True:
+                produto_cod = str(input("Digite o código:\n"))
+                lista_produto2 = [item for sublista in lista_produto for item in sublista]
+                localizar = produto_cod in lista_produto2
+                if localizar == True:
                     print("Esse código já existe.")
+                    continue
                 else:
                     lista_produto.append([produto_nome,produto_preco,produto_cod])
-                    print("Produto cadastrado com sucesso")
-                    while True:
-                        loop = int(input("Deseja cadastrar outro?\n1 - Sim\n2 - Não \n")) #Escolha de repetição
-                        if loop == 1:
-                            loop_cadastro = True
-                            break
-                        elif loop == 2:
-                            loop_cadastro = False
-                            break
-                        else:
-                            print("Opção Inválida.")
-                            continue
+                    print("Produto cadastrado.")
+                    break
+            loop = int(input("Deseja cadastrar outro?\n1 - Sim\n2 - Não \n")) #Escolha de repetição
+            while True:
+                if loop == 1:
+                    loop_cadastro = True
+                    break
+                elif loop == 2:
+                    loop_cadastro = False
+                    break
+                else:
+                    print("Opção Inválida.")
+                    continue
 
 
             
