@@ -5,7 +5,7 @@ while True:
     |2-Funcionarios              | 
     |3-Produtos                  |     
     |4-Pedidos                   |
-    |5-Carrinho
+    |5-Carrinho                  |
     |6-Entregas                  | 
     |0-Sair                      |
     +----------------------------+
@@ -18,7 +18,7 @@ while True:
         +----------CLIENTES----------+
         |  1-Cadastrar clientes      |
         |  2-Atualizar clientes      |
-        |  3-Lista de clientes
+        |  3-Lista de clientes       |
         |  4-Excluir clientes        |
         |  0-Sair                    |
         +----------------------------+
