@@ -83,7 +83,7 @@ while True:
         print('''
         +----------PRODUTOS----------+
         |  1-Cadastrar produtos      |
-        |  2-Listar produtos         |
+        |  2-Lista de produtos       |
         |  3-Atualizar produtos      |
         |  4-Excluir produtos        |
         |  0-Sair                    |
@@ -98,7 +98,7 @@ while True:
 
 
                 menuProdutos = int(input("Selecione uma opção baseado no número do menu dos produtos: "))
-            elif menuProdutos == 2: #Listar produtos
+            elif menuProdutos == 2: #Lista de produtos
                 print("\n+--------------+\n")
 
 
@@ -157,25 +157,25 @@ while True:
         +----------------------------+
         ''')
 
-        menuPedidos = int(input("Selecione uma opção baseado no número do menu dos carrinho: "))
+        menuCarrinho = int(input("Selecione uma opção baseado no número do menu dos carrinho: "))
 
         while True:
-            if menuPedidos == 1: #Adicionar item ao carrinho
+            if menuCarrinho == 1: #Adicionar item ao carrinho
                 print("\n+--------------+\n")
 
 
-                menuPedidos = int(input("Selecione uma opção baseado no número do menu do carrinho "))
-            elif menuPedidos == 2: #Visualizar itens do carrinho
+                menuCarrinho = int(input("Selecione uma opção baseado no número do menu do carrinho "))
+            elif menuCarrinho == 2: #Visualizar itens do carrinho
                 print("\n+--------------+\n")
 
  
-                menuPedidos = int(input("Selecione uma opção baseado no número do menu do carrinho: "))
-            elif menuPedidos == 3: #Excluir item do carrinho
+                menuCarrinho = int(input("Selecione uma opção baseado no número do menu do carrinho: "))
+            elif menuCarrinho == 3: #Excluir item do carrinho
                 print("\n+--------------+\n")
 
 
-                menuPedidos = int(input("Selecione uma opção baseado no número do menu do carrinho: "))
-            elif menuPedidos == 0: #Sair do menu
+                menuCarrinho = int(input("Selecione uma opção baseado no número do menu do carrinho: "))
+            elif menuCarrinho == 0: #Sair do menu
                 break
             else:
                 print("[ERROR!] Algo deu errado! Reinicie o sistema e tente novamente")
