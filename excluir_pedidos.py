@@ -1,12 +1,13 @@
+
 #Excluir pedidos
 
 
 
-lista = ["Carro","Moto","Bicicleta"] #Exemplo
+lista = ["carro","moto","bicicleta"] #Exemplo
 
-item = (input("Digite o item que deseja excluir:")) #Recebe o item que deseja excluir 
+item = (input("Digite o item que deseja excluir:")) #Recebe o item desejado para excluir
 
 indice = lista.index(item)
 lista.pop (indice)
 print("\nItem excluído")
-print("\nCarrinho:",lista)
+print("\nCarrinho:",item)
