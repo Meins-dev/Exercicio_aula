@@ -23,18 +23,18 @@ if atualizar_produto == True:
 
         print("1- Nome")
         print("2- Preço")
-        print("1- Código")
+        print("3- Código")
 
-        opcao = input("O que deseja atualizar? (Se não tiver nada digite 0 para sair!)")
+        opcao = input("O que deseja atualizar? (Se não tiver nada digite 0 para sair!): ")
 
         if opcao == "1":
-            novo_nome = input("Novo Nome:")
+            novo_nome = input("Novo Nome: ")
             lista_produto[indice][0] = novo_nome
         elif opcao == "2":
-            novo_preco = float(input("Novo Preço:"))
+            novo_preco = float(input("Novo Preço: "))
             lista_produto[indice][1] = novo_preco
         elif opcao == "3":
-            novo_codigo = input("Novo Código:")
+            novo_codigo = input("Novo Código: ")
             lista_produto[indice][2] = novo_codigo
         elif opcao == "0":
             print("Retornando ao menu!")
