@@ -4,8 +4,9 @@ while True:
     |1-Clientes                  |     
     |2-Funcionarios              | 
     |3-Produtos                  |     
-    |4-Pedidos                   |   
-    |5-Entregas                  | 
+    |4-Pedidos                   |
+    |5-Carrinho
+    |6-Entregas                  | 
     |0-Sair                      |
     +----------------------------+
     ''')
@@ -17,7 +18,8 @@ while True:
         +----------CLIENTES----------+
         |  1-Cadastrar clientes      |
         |  2-Atualizar clientes      |
-        |  3-Excluir clientes        |
+        |  3-Lista de clientes
+        |  4-Excluir clientes        |
         |  0-Sair                    |
         +----------------------------+
         ''')
@@ -27,17 +29,22 @@ while True:
         while True:
             if menuClientes == 1: #Cadastrar clientes
                 print("\n+--------------+\n")
-                print("Estou cadastrando os clientes.")
+
 
                 menuClientes = int(input("Selecione uma opção baseado no número do menu dos clientes: "))
             elif menuClientes == 2: #Atualizar clientes
                 print("\n+--------------+\n")
-                print("Estou atualizando os clientes.")
+
 
                 menuClientes = int(input("Selecione uma opção baseado no número do menu dos clientes: "))
-            elif menuClientes == 3: #Excluir clientes
+            elif menuClientes == 3: #Lista de clientes
                 print("\n+--------------+\n")
-                print("Estou excluindo os clientes.")
+
+
+                menuClientes = int(input("Selecione uma opção baseado no número do menu dos clientes: "))
+            elif menuClientes == 4: #Excluir clientes
+                print("\n+--------------+\n")
+
 
                 menuClientes = int(input("Selecione uma opção baseado no número do menu dos clientes: "))
             elif menuClientes == 0: #Sair do Menu
@@ -58,12 +65,11 @@ while True:
         while True:
             if menuFuncionarios == 1: #Cadastrar funcionários
                 print("\n+--------------+\n")
-                print("Estou cadastrando os funcionários.")
+
 
                 menuFuncionarios = int(input("Selecione uma opção baseado no número do menu dos funcionários: "))
             elif menuFuncionarios == 2: #Excluir funcionários
                 print("\n+--------------+\n")
-                print("Estou excluindo os funcionários.")
 
  
                 menuFuncionarios = int(input("Selecione uma opção baseado no número do menu dos funcionários: "))
@@ -78,8 +84,8 @@ while True:
         +----------PRODUTOS----------+
         |  1-Cadastrar produtos      |
         |  2-Listar produtos         |
-        |  3-Excluir produtos        |
-        |  4-Finalizar produtos      |
+        |  3-Atualizar produtos      |
+        |  4-Excluir produtos        |
         |  0-Sair                    |
         +----------------------------+
         ''')
@@ -89,23 +95,23 @@ while True:
         while True:
             if menuProdutos == 1: #Cadastrar produtos
                 print("\n+--------------+\n")
-                print("Estou cadastrando os produtos.")
+
 
                 menuProdutos = int(input("Selecione uma opção baseado no número do menu dos produtos: "))
             elif menuProdutos == 2: #Listar produtos
                 print("\n+--------------+\n")
-                print("Estou listando os produtos.")
+
 
  
                 menuProdutos = int(input("Selecione uma opção baseado no número do menu dos produtos: "))
-            elif menuProdutos == 3: #Excluir produtos
+            elif menuProdutos == 3: #Atualizar produtos
                 print("\n+--------------+\n")
-                print("Estou excluindo os produtos")
+
 
                 menuProdutos = int(input("Selecione uma opção baseado no número do menu dos produtos: "))
-            elif menuProdutos == 4: #Finalizar produtos
+            elif menuProdutos == 4: #Excluir produtos
                 print("\n+--------------+\n")
-                print("Estou finalizando os produtos")
+
 
                 menuProdutos = int(input("Selecione uma opção baseado no número do menu dos produtos: "))
             elif menuProdutos == 0: #Sair do menu
@@ -118,8 +124,7 @@ while True:
         print('''
         +-----------PEDIDOS----------+
         |  1-Finalizar pedidos       |
-        |  2-Listar pedidos          |
-        |  3-Excluir pedidos         |
+        |  2-Excluir pedidos         |
         |  0-Sair                    |
         +----------------------------+
         ''')
@@ -127,42 +132,72 @@ while True:
         menuPedidos = int(input("Selecione uma opção baseado no número do menu dos pedidos: "))
 
         while True:
-            if menuPedidos == 1: #Cadastrar pedidos
+            if menuPedidos == 1: #Finalizar pedidos
                 print("\n+--------------+\n")
-                print("Estou finalizando os pedidos.")
+
 
                 menuPedidos = int(input("Selecione uma opção baseado no número do menu dos pedidos: "))
-            elif menuPedidos == 2: #Listar pedidos
+            elif menuPedidos == 2: #Excluir pedidos
                 print("\n+--------------+\n")
-                print("Estou listando os pedidos.")
 
- 
-                menuPedidos = int(input("Selecione uma opção baseado no número do menu dos pedidos: "))
-            elif menuPedidos == 3: #Excluir pedidos
-                print("\n+--------------+\n")
-                print("Estou excluindo os pedidos")
 
                 menuPedidos = int(input("Selecione uma opção baseado no número do menu dos pedidos: "))
             elif menuPedidos == 0: #Sair do menu
                 break
             else:
                 print("[ERROR!] Algo deu errado! Reinicie o sistema e tente novamente")
-    elif menuPrincipal == 5: #Menu das entregas
+    elif menuPrincipal == 5: #Menu do carrinho
+
+        print('''
+        +-----------CARRINHO---------+
+        |  1-Adicionar item          |
+        |  2-Visualizar itens        |
+        |  3-Excluir item            |
+        |  0-Sair                    |
+        +----------------------------+
+        ''')
+
+        menuPedidos = int(input("Selecione uma opção baseado no número do menu dos carrinho: "))
+
+        while True:
+            if menuPedidos == 1: #Adicionar item ao carrinho
+                print("\n+--------------+\n")
+
+
+                menuPedidos = int(input("Selecione uma opção baseado no número do menu do carrinho "))
+            elif menuPedidos == 2: #Visualizar itens do carrinho
+                print("\n+--------------+\n")
+
+ 
+                menuPedidos = int(input("Selecione uma opção baseado no número do menu do carrinho: "))
+            elif menuPedidos == 3: #Excluir item do carrinho
+                print("\n+--------------+\n")
+
+
+                menuPedidos = int(input("Selecione uma opção baseado no número do menu do carrinho: "))
+            elif menuPedidos == 0: #Sair do menu
+                break
+            else:
+                print("[ERROR!] Algo deu errado! Reinicie o sistema e tente novamente")
+    elif menuPrincipal == 6: #Menu das entregas
 
         print('''
         +-----------ENTREGAS---------+
         |  1-Cadastrar entregas      |
+        |  0-Sair                    |
         +----------------------------+
         ''')
 
         menuEntregas = int(input("Selecione uma opção baseado no número do menu das entregas: "))
 
         while True:
-            if menuEntregas == 1: #Cadastrar endereços
+            if menuEntregas == 1: #Cadastrar entregas
                 print("\n+--------------+\n")
-                print("Estou cadastrando as entregas.")
+
 
                 menuEntregas = int(input("Selecione uma opção baseado no número do menu das entregas: "))
+                break
+            elif menuEntregas== 0: #Sair do menu
                 break
             else:
                 print("[ERROR!] Algo deu errado! Reinicie o sistema e tente novamente")
