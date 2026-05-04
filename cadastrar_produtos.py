@@ -1,6 +1,7 @@
 #Cadastro de Produtos
 lista_produto=[] #lista principal
 
+
 while True:
     print('''
     +----------PRODUTOS----------+
@@ -22,6 +23,9 @@ while True:
             produto_nome=str(input("Digite o nome do produto:\n"))
             produto_preco=float(input("Digite o preço:\n"))
             produto_cod = str(input("Digite o código:\n"))
+            if produto_cod in lista_produto:
+                print ("Código já usado.")
+                continue
             lista_produto.append([produto_nome,produto_preco,produto_cod])
             print("Produto cadastrado com sucesso")
 
